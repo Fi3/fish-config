@@ -1,7 +1,7 @@
-#FISH CONFIG
+# FISH CONFIG
 
 ...
 
 
-###TODO
+### TODO
 1. Encrypt fish_history and upload on github 
