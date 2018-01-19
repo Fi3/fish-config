@@ -1,5 +1,5 @@
 # golang
-set -x GOPATH $HOME
+# set -x GOPATH $HOME
 
 
 # homebrew (in osx should put bin in ~/usr/local in linux in ~/.linuxbrew

@@ -23,6 +23,9 @@ setenv -x LESS_TERMCAP_us (set_color -o green)
 
 # OPAM configuration
 source /Users/filippomerli/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
+set -x PATH $PATH "$HOME/.opam/system/bin" $PATH
 
 # go
-set -x PATH $PATH /usr/local/go/bin
+# set -x PATH $PATH /usr/local/go/bin
+
+set -x PATH $PATH "$HOME/.local/bin" $PATH
