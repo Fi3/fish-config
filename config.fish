@@ -10,7 +10,6 @@
 # editor
 set -x EDITOR "nvim"
 
-
 # Colorful man pages
 # from http://pastie.org/pastes/206041/text
 setenv -x LESS_TERMCAP_mb (set_color -o red)
@@ -23,9 +22,17 @@ setenv -x LESS_TERMCAP_us (set_color -o green)
 
 # OPAM configuration
 source /Users/filippomerli/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
-set -x PATH $PATH "$HOME/.opam/system/bin" $PATH
+set -x PATH "$HOME/.opam/system/bin" $PATH
 
 # go
-# set -x PATH $PATH /usr/local/go/bin
+set -x GOPATH "$HOME/gocode"
+set -x PATH "$HOME/gocode/bin" $PATH
 
-set -x PATH $PATH "$HOME/.local/bin" $PATH
+# haskell
+set -x PATH "$HOME/.local/bin" $PATH
+
+# test-lightning
+alias lncli-alice="lncli --rpcserver=localhost:10001 --no-macaroons"
+alias lncli-bob="lncli --rpcserver=localhost:10002 --no-macaroons"
+alias lncli-charlie="lncli --rpcserver=localhost:10003 --no-macaroons"
+
