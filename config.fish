@@ -26,3 +26,5 @@ alias lncli-alice="lncli --rpcserver=localhost:10001 --no-macaroons"
 alias lncli-bob="lncli --rpcserver=localhost:10002 --no-macaroons"
 alias lncli-charlie="lncli --rpcserver=localhost:10003 --no-macaroons"
 
+# terminal-slack
+set -x SLACK_TOKEN (cat /home/fi3/slackToken)
