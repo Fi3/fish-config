@@ -28,3 +28,6 @@ alias lncli-charlie="lncli --rpcserver=localhost:10003 --no-macaroons"
 
 # terminal-slack
 set -x SLACK_TOKEN (cat /home/fi3/slackToken)
+
+# nix
+set -x NIX_PATH "nixpkgs=$HOME/.nix-defexpr/channels/nixpkgs"
